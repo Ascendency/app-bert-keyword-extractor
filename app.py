@@ -36,7 +36,7 @@ c30, c31, c32 = st.columns([2.5, 1, 3])
 
 with c30:
     # st.image("logo.png", width=400)
-    st.title("BERT Keyword Extractor")
+    st.title("Sorcero Testbed BERT Keyword Extractor")
     st.header(" ")
 
 
@@ -62,7 +62,7 @@ with st.form(key="my_form"):
         ModelType = st.radio(
             "Choose your Language model",
             ["DistilBERT (Default)", "Flair"],
-            help="At present, you can choose between 2 models (Flair or DistilBERT) to embed your text. More to come!",
+            help="At present, you can choose between 2 langauge models (Flair or DistilBERT) to embed your text. More to come!",
         )
 
         if ModelType == "Default (DistilBERT)":
