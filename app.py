@@ -11,8 +11,8 @@ import os
 import json
 
 st.set_page_config(
-    page_title="BERT Keyword Extractor",
-    page_icon="🎈",
+    page_title="Sorcero Test: BERT Keyword Extractor",
+    page_icon="",
 )
 
 
@@ -36,8 +36,8 @@ c30, c31, c32 = st.columns([2.5, 1, 3])
 
 with c30:
     # st.image("logo.png", width=400)
-    st.title("🔑 BERT Keyword Extractor")
-    st.header("")
+    st.title("BERT Keyword Extractor")
+    st.header("https://media-exp1.licdn.com/dms/image/C4E0BAQHnMgfWhOtybQ/company-logo_200_200/0/1639691414581?e=2147483647&v=beta&t=PRAwvEsjgLosSfj0XtfTCUwcr4DFllWTGFYY0SxFBQs")
 
 
 
@@ -45,7 +45,7 @@ with st.expander("ℹ️ - About this app", expanded=True):
 
     st.write(
         """     
--   The *BERT Keyword Extractor* app is an easy-to-use interface built in Streamlit for the amazing [KeyBERT](https://github.com/MaartenGr/KeyBERT) library from Maarten Grootendorst!
+-   The Sorcero Testbed for the *BERT Keyword Extractor* app is an easy-to-use interface built in Streamlit for the amazing [KeyBERT](https://github.com/MaartenGr/KeyBERT) library from Maarten Grootendorst!
 -   It uses a minimal keyword extraction technique that leverages multiple NLP embeddings and relies on [Transformers] (https://huggingface.co/transformers/) 🤗 to create keywords/keyphrases that are most similar to a document.
 	    """
     )
@@ -53,14 +53,14 @@ with st.expander("ℹ️ - About this app", expanded=True):
     st.markdown("")
 
 st.markdown("")
-st.markdown("## **📌 Paste document **")
+st.markdown("## ** Paste document **")
 with st.form(key="my_form"):
 
 
     ce, c1, ce, c2, c3 = st.columns([0.07, 1, 0.07, 5, 0.07])
     with c1:
         ModelType = st.radio(
-            "Choose your model",
+            "Choose your Language model",
             ["DistilBERT (Default)", "Flair"],
             help="At present, you can choose between 2 models (Flair or DistilBERT) to embed your text. More to come!",
         )
